@@ -1,0 +1,2 @@
+# VeraHMIBreakout
+![Schematic](VeraHMIBreakout.svg)
