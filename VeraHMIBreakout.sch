@@ -32,7 +32,6 @@ LIBS:atmel
 LIBS:contrib
 LIBS:valves
 LIBS:symbols
-LIBS:RF_ZigBee
 LIBS:VeraHMIBreakout-cache
 EELAYER 25 0
 EELAYER END
@@ -304,45 +303,8 @@ F 3 "" H 4450 2300 50  0001 C CNN
 	1    4450 2300
 	1    0    0    -1  
 $EndComp
-Text Notes 9700 4550 0    60   ~ 0
-To LCD screen\n\n
-$Comp
-L Conn_01x02 J?
-U 1 1 5AA02E20
-P 10450 4600
-F 0 "J?" H 10450 4700 50  0000 C CNN
-F 1 "Conn_01x02" H 10450 4400 50  0000 C CNN
-F 2 "" H 10450 4600 50  0001 C CNN
-F 3 "" H 10450 4600 50  0001 C CNN
-	1    10450 4600
-	1    0    0    -1  
-$EndComp
-Text GLabel 10100 4600 0    60   Input ~ 0
+Text GLabel 9900 3800 0    60   Input ~ 0
 RCA
-$Comp
-L GND #PWR?
-U 1 1 5AA03022
-P 10100 4750
-F 0 "#PWR?" H 10100 4500 50  0001 C CNN
-F 1 "GND" H 10100 4600 50  0000 C CNN
-F 2 "" H 10100 4750 50  0001 C CNN
-F 3 "" H 10100 4750 50  0001 C CNN
-	1    10100 4750
-	1    0    0    -1  
-$EndComp
-$Comp
-L Conn_01x07 J?
-U 1 1 5AA03D86
-P 10450 5800
-F 0 "J?" H 10450 6200 50  0000 C CNN
-F 1 "Conn_01x07" H 10450 5400 50  0000 C CNN
-F 2 "" H 10450 5800 50  0001 C CNN
-F 3 "" H 10450 5800 50  0001 C CNN
-	1    10450 5800
-	1    0    0    -1  
-$EndComp
-Text Notes 9700 5200 0    60   ~ 0
-CAN, power and GPIO input
 $Comp
 L VCC #PWR?
 U 1 1 5AA0439A
@@ -515,63 +477,39 @@ Wire Wire Line
 Wire Wire Line
 	4450 2250 4550 2250
 Wire Wire Line
-	10100 4600 10250 4600
-Wire Wire Line
-	10100 4750 10100 4700
-Wire Wire Line
-	10100 4700 10250 4700
-Wire Wire Line
 	9200 1850 9200 1900
 $Comp
 L VCC #PWR?
 U 1 1 5AA04C4F
-P 10050 5450
-F 0 "#PWR?" H 10050 5300 50  0001 C CNN
-F 1 "VCC" H 10050 5600 50  0000 C CNN
-F 2 "" H 10050 5450 50  0001 C CNN
-F 3 "" H 10050 5450 50  0001 C CNN
-	1    10050 5450
+P 9900 3650
+F 0 "#PWR?" H 9900 3500 50  0001 C CNN
+F 1 "VCC" H 9900 3800 50  0000 C CNN
+F 2 "" H 9900 3650 50  0001 C CNN
+F 3 "" H 9900 3650 50  0001 C CNN
+	1    9900 3650
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	10050 5450 10050 5500
-Wire Wire Line
-	10050 5500 10250 5500
-Text GLabel 10000 5600 0    60   Input ~ 0
+Text GLabel 9900 4000 0    60   Input ~ 0
 START/STOP_TIMER
-Text GLabel 10000 5700 0    60   Input ~ 0
-NEW_LAP/RESET
-Wire Wire Line
-	10000 5600 10250 5600
-Wire Wire Line
-	10250 5700 10000 5700
-Text GLabel 10000 5800 0    60   Input ~ 0
+Text GLabel 9900 4200 0    60   Input ~ 0
+NEW_LAP
+Text GLabel 9900 4400 0    60   Input ~ 0
 SPEEDOMETER_SIGNAL
-Wire Wire Line
-	10000 5800 10250 5800
-Text GLabel 10000 5900 0    60   Input ~ 0
+Text GLabel 9900 4800 0    60   Input ~ 0
 CANH
-Text GLabel 10000 6000 0    60   Input ~ 0
+Text GLabel 9900 4900 0    60   Input ~ 0
 CANL
-Wire Wire Line
-	10000 5900 10250 5900
-Wire Wire Line
-	10250 6000 10000 6000
 $Comp
 L GND #PWR?
 U 1 1 5AA06408
-P 10050 6150
-F 0 "#PWR?" H 10050 5900 50  0001 C CNN
-F 1 "GND" H 10050 6000 50  0000 C CNN
-F 2 "" H 10050 6150 50  0001 C CNN
-F 3 "" H 10050 6150 50  0001 C CNN
-	1    10050 6150
+P 9900 6250
+F 0 "#PWR?" H 9900 6000 50  0001 C CNN
+F 1 "GND" H 9900 6100 50  0000 C CNN
+F 2 "" H 9900 6250 50  0001 C CNN
+F 3 "" H 9900 6250 50  0001 C CNN
+	1    9900 6250
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	10050 6150 10050 6100
-Wire Wire Line
-	10050 6100 10250 6100
 Text GLabel 2500 5150 0    60   Input ~ 0
 NEW_LAP/RESET
 Text GLabel 2500 5050 0    60   Input ~ 0
@@ -584,4 +522,97 @@ Text GLabel 4650 6600 2    60   Input ~ 0
 RCA
 Wire Wire Line
 	4650 6600 4500 6600
+$Comp
+L Conn_01x26 J?
+U 1 1 5AB7B0BB
+P 10500 4900
+F 0 "J?" H 10500 6200 50  0000 C CNN
+F 1 "Conn_01x26" H 10500 3500 50  0000 C CNN
+F 2 "" H 10500 4900 50  0001 C CNN
+F 3 "" H 10500 4900 50  0001 C CNN
+	1    10500 4900
+	1    0    0    -1  
+$EndComp
+Text Notes 8150 3400 0    60   ~ 0
+PCB Mount 9-6437287-8 Super Seal connector
+Wire Wire Line
+	9900 3650 9900 3700
+Wire Wire Line
+	9900 3700 10300 3700
+Wire Wire Line
+	9900 6250 9900 6200
+Wire Wire Line
+	9900 6200 10300 6200
+Wire Wire Line
+	9900 3800 10300 3800
+Text GLabel 9900 3900 0    60   Input ~ 0
+RCA_GND
+Wire Wire Line
+	9900 3900 10300 3900
+Wire Wire Line
+	9900 4000 10300 4000
+Text GLabel 9900 4100 0    60   Input ~ 0
+START/STOP_TIMER_GND
+Wire Wire Line
+	9900 4100 10300 4100
+Text GLabel 9900 4300 0    60   Input ~ 0
+NEW_LAP_GND
+Wire Wire Line
+	9900 4300 10300 4300
+Wire Wire Line
+	10300 4200 9900 4200
+Text GLabel 9900 4500 0    60   Input ~ 0
+SPEEDOMETER_SIGNAL_GND
+Wire Wire Line
+	9900 4500 10300 4500
+Wire Wire Line
+	10300 4400 9900 4400
+Text GLabel 9900 4600 0    60   Input ~ 0
+RESET
+Text GLabel 9900 4700 0    60   Input ~ 0
+RESET_GND
+Wire Wire Line
+	9900 4600 10300 4600
+Wire Wire Line
+	10300 4700 9900 4700
+Wire Wire Line
+	9900 4800 10300 4800
+Wire Wire Line
+	10300 4900 9900 4900
+Text GLabel 7750 5550 0    60   Input ~ 0
+START/STOP_TIMER_GND
+Text GLabel 7750 5650 0    60   Input ~ 0
+NEW_LAP_GND
+Text GLabel 7750 5750 0    60   Input ~ 0
+SPEEDOMETER_SIGNAL_GND
+Text GLabel 7750 5850 0    60   Input ~ 0
+RESET_GND
+$Comp
+L GND #PWR?
+U 1 1 5AB7DADD
+P 7900 5950
+F 0 "#PWR?" H 7900 5700 50  0001 C CNN
+F 1 "GND" H 7900 5800 50  0000 C CNN
+F 2 "" H 7900 5950 50  0001 C CNN
+F 3 "" H 7900 5950 50  0001 C CNN
+	1    7900 5950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7900 5550 7900 5950
+Wire Wire Line
+	7900 5850 7750 5850
+Wire Wire Line
+	7900 5750 7750 5750
+Connection ~ 7900 5850
+Wire Wire Line
+	7900 5650 7750 5650
+Connection ~ 7900 5750
+Wire Wire Line
+	7900 5550 7750 5550
+Connection ~ 7900 5650
+Text GLabel 4650 6500 2    60   Input ~ 0
+RESET
+Wire Wire Line
+	4650 6500 4500 6500
 $EndSCHEMATC
