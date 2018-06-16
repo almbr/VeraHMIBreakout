@@ -611,4 +611,8 @@ Connection ~ 7900 5750
 Wire Wire Line
 	7900 5550 7750 5550
 Connection ~ 7900 5650
+Text GLabel 4650 6500 2    60   Input ~ 0
+RESET
+Wire Wire Line
+	4650 6500 4500 6500
 $EndSCHEMATC

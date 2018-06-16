@@ -91,7 +91,7 @@ F 3 "" H 3550 7200 50  0001 C CNN
 	1    3550 7200
 	1    0    0    -1  
 $EndComp
-Text GLabel 2500 4950 0    60   Input ~ 0
+Text GLabel 2450 5850 0    60   Input ~ 0
 Speedometer_signal
 $Comp
 L TRACO_THD_10-1211N PS1
@@ -510,14 +510,10 @@ F 3 "" H 9900 6250 50  0001 C CNN
 	1    9900 6250
 	1    0    0    -1  
 $EndComp
-Text GLabel 2500 5150 0    60   Input ~ 0
+Text GLabel 2500 4950 0    60   Input ~ 0
 NEW_LAP/RESET
-Text GLabel 2500 5050 0    60   Input ~ 0
+Text GLabel 2500 4850 0    60   Input ~ 0
 START/STOP_TIMER
-Wire Wire Line
-	2500 5050 2700 5050
-Wire Wire Line
-	2700 5150 2500 5150
 Text GLabel 4650 6600 2    60   Input ~ 0
 RCA
 Wire Wire Line
@@ -615,4 +611,8 @@ Text GLabel 4650 6500 2    60   Input ~ 0
 RESET
 Wire Wire Line
 	4650 6500 4500 6500
+Wire Wire Line
+	2500 4850 2700 4850
+Wire Wire Line
+	2450 5850 2700 5850
 $EndSCHEMATC
